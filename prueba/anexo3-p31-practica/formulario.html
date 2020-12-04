@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"> <title>Insert title here</title> </head>
+<body>
+<h3>Búsqueda de alumnos</h3>
+<form action="busqueda.php" method="get"> Filtro: <select name="filtro">
+<option value="1">NOMBRE</option>
+<option value="2">PRIMER APELLIDO</option> <option value="3">SEGUNDO APELLIDO</option> <option value="4">CUENTA</option>
+</select>
+<br/>
+Argumento: <input type="text" name="argumento">
+<br/><b>Ordenado</b><br/>
+Nombre<input type="checkbox" name="orden" value="nombre"><br />
+Cuenta: <input type="checkbox" name="orden" value="cuenta"><br /> Calificacion: <input type="checkbox" name="orden" value="calificacion"><br /> <input type="submit" value="buscar" name="accion">
+</form> <hr>
+<h3>Filtrado por calificaciones</h3>
+<form action="busqueda.php" method="get">
+Mayor<input type="radio" name="filtro" value="mayor" checked> Menor<input type="radio" name="filtro" value="menor">
+<br />
+<input type="number" name="argumento" max=10 min=0><br/> <input type="submit" value="filtrar" name="accion">
+</form> <hr>
+<h3>Alumnos</h3>
+<ul>
+<li><a href="busqueda.php?acc=media">Ver calificacion media</a></li> <li><a href="busqueda.php?acc=maximo">Ver alumno con nota maxima</a></li> <li><a href="busqueda.php?acc=minimo">Ver alumno con nota minima</a></li>
+</ul>
+</body>
+</html>

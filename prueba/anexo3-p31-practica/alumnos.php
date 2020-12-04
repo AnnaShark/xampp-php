@@ -1,0 +1,22 @@
+<?php //ARRAY $usuarios
+$alumnos[]=array('nombre' => 'Alberto', 'apellido1' => 'Polanco', 'apellido2' => 'Sánchez','cuenta' => 'albe', 'calificacion' => 7.5);
+$alumnos[]=array('nombre' => 'Alberto', 'apellido1' => 'Jiménez', 'apellido2' => 'Lopez','cuenta' => 'alva', 'calificacion' => 6.0);
+$alumnos[]=array('nombre' => 'Aranzazu', 'apellido1' => 'Pérez', 'apellido2' => 'Laborda','cuenta' => 'aran', 'calificacion' => 3.5);
+$alumnos[]=array('nombre' => 'Aritz', 'apellido1' => 'Lorenzo', 'apellido2' => 'García','cuenta' => 'arit', 'calificacion' => 6);
+$alumnos[]=array('nombre' => 'Asier', 'apellido1' => 'Pérez', 'apellido2' => 'Tamayo','cuenta' => 'asie', 'calificacion' => 7);
+$alumnos[]=array('nombre' => 'Eder', 'apellido1' => 'Moledo', 'apellido2' => 'Villalba','cuenta' => 'eder', 'calificacion' => 6.5);
+$alumnos[]=array('nombre' => 'Eneko', 'apellido1' => 'de la Torre', 'apellido2' => 'Sánchez','cuenta' => 'enek', 'calificacion' => 5.5);
+$alumnos[]=array('nombre' => 'Francisco Borja', 'apellido1' => 'Navarro', 'apellido2' => 'Río','cuenta' => 'fran', 'calificacion' => 5);
+$alumnos[]=array('nombre' => 'Gaizka', 'apellido1' => 'Lorenzo', 'apellido2' => 'Jiménez','cuenta' => 'gaiz', 'calificacion' => 4.5);
+$alumnos[]=array('nombre' => 'Iñaki', 'apellido1' => 'Angulo', 'apellido2' => 'Tarancón','cuenta' => 'inak', 'calificacion' => 2);
+$alumnos[]=array('nombre' => 'Iñaki', 'apellido1' => 'Demón', 'apellido2' => 'Fernandez','cuenta' => 'inai', 'calificacion' => 7);
+$alumnos[]=array('nombre' => 'Iñigo', 'apellido1' => 'Casado', 'apellido2' => 'Rico','cuenta' => 'inig', 'calificacion' => 8);
+$alumnos[]=array('nombre' => 'Iratxe', 'apellido1' => 'Urriolabeitia', 'apellido2' => 'Zabala','cuenta' => 'irat', 'calificacion' => 9.5);
+$alumnos[]=array('nombre' => 'Isaac Jacob', 'apellido1' => 'Pazos', 'apellido2' => 'López','cuenta' => 'isaa', 'calificacion' => 7.5);
+$alumnos[]=array('nombre' => 'Jon', 'apellido1' => 'Aróstegui', 'apellido2' => 'Brizuela','cuenta' => 'jona', 'calificacion' => 6);
+$alumnos[]=array('nombre' => 'Jon', 'apellido1' => 'Elorriaga', 'apellido2' => 'Bilbao','cuenta' => 'jone', 'calificacion' => 6.5);
+$alumnos[]=array('nombre' => 'Lander', 'apellido1' => 'Eguskiza', 'apellido2' => 'Lamelas','cuenta' => 'land', 'calificacion' => 3);
+$alumnos[]=array('nombre' => 'Luis Fernando', 'apellido1' => 'Coca', 'apellido2' => 'Cabrera','cuenta' => 'luis', 'calificacion' => 4);
+$alumnos[]=array('nombre' => 'Miguel', 'apellido1' => 'Rodrigo', 'apellido2' => 'Ortega','cuenta' => 'migu', 'calificacion' => 5.5);
+$alumnos[]=array('nombre' => 'Sergio', 'apellido1' => 'Castro', 'apellido2' => 'Bravo','cuenta' => 'serg', 'calificacion' => 6.5);
+$alumnos[]=array('nombre' => 'Xabier', 'apellido1' => 'Isla', 'apellido2' => 'Rodriguez','cuenta' => 'xabi', 'calificacion' => 7);
