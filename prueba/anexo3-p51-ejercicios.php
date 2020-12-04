@@ -64,6 +64,95 @@ foreach ($str_exp as $key => $value) {
 </td></tr> </table>
 <br><br>
 
+<table width="700px"> <tr><td>EJERCICIO 2</td></tr> 
+<?php
+function cmp($cadena1, $candena2){
+	$res = strcasecmp($cadena1, $candena2);
+	if($res = 1){
+		return "true";
+	}else{return "false";}
+}
 
+echo "<tr><td>".cmp("Anya", "anya");
+
+
+?>
+</td></tr> </table>
+<br><br>
+
+<table width="700px"> <tr><td>EJERCICIO 3</td></tr> 
+<?php
+function decimstr($numero){
+	$res = "#".number_format($numero, 2, '.', '')."#";
+	return $res;
+}
+
+$conv = decimstr(23434);
+echo "<tr><td>".$conv;
+
+
+?>
+</td></tr> </table>
+<br><br>
+
+<table width="700px"> <tr><td>EJERCICIO 4</td></tr> 
+<?php
+echo "<tr><td>";
+
+function relleno($cadena){
+
+	if(strlen($cadena)<=30){
+		printf("%0-30s",$cadena);
+
+	} else{
+		$res =substr($cadena,0,30);
+		echo $res;
+	}
+}
+	
+
+relleno("fkgjhh");
+
+//relleno("fkgjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+//echo "<tr><td>".$cad2;
+
+?>
+</td></tr> </table>
+<br><br>
+
+
+<table width="700px"> <tr><td>EJERCICIO 5</td></tr> 
+<?php
+function serialcheck($serial){
+	$expr_reg = "^[0-9]{5}-[0-9]{5}-[0-9]{5}-[0-9]{5}^";
+	if(preg_match($expr_reg,$serial) == true)
+		{return "true";}
+	return "false";
+}
+
+echo "<tr><td>".serialcheck("02394-45677-37950-34503");
+?>
+</td></tr> </table>
+<br><br>
+
+
+<table width="700px"> <tr><td>EJERCICIO 6</td></tr> 
+<?php
+
+function paircheck($serial){
+	$expr_reg = "^(0|2|4|6|8)(1|3|5|7|9)(0|2|4|6|8)(1|3|5|7|9)-(0|2|4|6|8)(1|3|5|7|9)(0|2|4|6|8)(1|3|5|7|9)-(0|2|4|6|8)(1|3|5|7|9)(0|2|4|6|8)(1|3|5|7|9)-(0|2|4|6|8)(1|3|5|7|9)(0|2|4|6|8)(1|3|5|7|9)^";
+	if(preg_match($expr_reg,$serial) == true)
+		{return "true";}
+	return "false";
+}
+//0345-0345-0345-0345
+
+echo "<tr><td>".paircheck("0345-0345-0345-0345");
+
+
+
+?>
+</td></tr> </table>
+<br><br>
 
 </body> </html>
