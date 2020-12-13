@@ -130,19 +130,14 @@ function menu($circ, $com ) {
 }
 
 function total_comarca($com){
-	global $circunscripcion, $comarca, $ayuntamiento, $circunscripciones, $comarcas, $ayuntamientos,$votos;
+	global $circunscripcion, $comarca, $ayuntamiento, $circunscripciones, $comarcas, $ayuntamientos,$votos, $ayut_list;
 	$circ_name = $circunscripciones[$circunscripcion];
 	$com_name = $comarcas[$circ_name][$com];
 
 	$ayut_list = array();
-	$i = 0;
-	while($i<count($ayuntamientos[$com_name])){
-		foreach($ayuntamientos[$com_name] as $ayto){
-			$ayut_list[$i] = $ayto;
-			$i++;
+	foreach($ayuntamientos[$com_name] as $ayto){
+		array_push($ayut_list, $ayto);
 		}
-	
-	}
 
 	$zero_matrix = array_fill(0, 12, 0);
 	$keys_matrix = array_keys($votos[$ayut_list[0]]);
@@ -217,7 +212,7 @@ function votos_por_circunscripcion(){
 }
 
 function votos_por_comarca($circ){
-	global $circunscripcion, $comarca, $ayuntamiento, $circunscripciones, $comarcas, $ayuntamientos,$votos;
+	global $circunscripcion, $comarca, $ayuntamiento, $circunscripciones, $comarcas, $ayuntamientos,$votos, $ayut_list;
 	$votos_sub = array();
 	$circ_name = $circunscripciones[$circ];
 	$i=0;
