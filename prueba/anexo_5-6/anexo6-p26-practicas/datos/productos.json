@@ -1,0 +1,28 @@
+
+
+{
+
+	"36114": {
+	        "id": 36114,
+	        "producto": "T\u00e9 Dharamsala",
+	        "categoria": "Bebidas",
+	        "precio": 18
+	},
+
+	"36242": {
+		"id": 36242,
+		"producto": "Cerveza tibetana Barley", 
+		"categoria": "Bebidas",
+		"precio": 19
+	}, 
+
+	"36245": {
+		"id": 36245,
+		"producto": "Sharky magic chips", 
+		"categoria": "Comida",
+		"precio": 5
+	}	
+
+
+
+}
