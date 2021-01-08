@@ -60,7 +60,7 @@ if ( $btn_add->fuePulsado()) { //
         $product_toShow["unidades"] = $quantity;
         $product_toShow["importe"] = $importe;
 
-        var_dump($product_toShow);
+    
         array_push($lista_compra, $product_toShow);
     }else{$error_producto_desconocido = "No existe el producto indicado"; }
 
