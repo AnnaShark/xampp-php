@@ -1,4 +1,5 @@
 <?php
+require "session.php";
 $titular_err = "";
 
  
@@ -87,6 +88,12 @@ $titular_err = "";
     </style>
 </head>
 <body>
+<h1>BIENVENIDO <?= $usuario['USUARIO'] ?></h1>
+<p><?= ($usuario['ADMINISTRADOR'])?"ADMINISTRADOR":"USUARIO"; ?></p> 
+<a href="logout.php">CERRAR SESION</a>
+<br><br><br>
+
+
 <form method="post">
 
 TITULAR (max 50 letras): <input type="text" name="titular" value="<?php echo isset($_POST['titular']) ? $_POST['titular'] : '' ?>" pattern=".{1,50}" required><?php echo $titular_err ?>
