@@ -5,6 +5,11 @@ use \Core\Database;
 use \App\Entidades\Usuario;
 use \App\Interfaces\Crud;
 
+include_once "/Applications/XAMPP/xamppfiles/htdocs/prueba/anexo10-p32-ejercicio/app/interfaces/Crud.php";
+include_once "/Applications/XAMPP/xamppfiles/htdocs/prueba/anexo10-p32-ejercicio/app/core/Database.php";
+include_once "/Applications/XAMPP/xamppfiles/htdocs/prueba/anexo10-p32-ejercicio/app/entidades/Usuario.php";
+
+
 class Usuarios implements Crud{
 
     public static function getAll(){
@@ -19,10 +24,10 @@ class Usuarios implements Crud{
                 // Creacion de objeto Usuario por cada registro y agregado
                 // a matriz de resultados array_push($usuarios,
                 array_push($usuarios, 
-                            new Usuario ($reg["usuario"],
-                                        $reg["clave"],
-                                        $reg["administrador"],
-                                        $reg["activo"]
+                            new Usuario ($reg["USUARIO"],
+                                        $reg["CLAVE"],
+                                        $reg["ADMINISTRADOR"],
+                                        $reg["ACTIVO"]
             )); 
             }
             return $usuarios;
@@ -39,10 +44,10 @@ class Usuarios implements Crud{
             $reg=$query -> fetch();
             return (($reg)?
                 new Usuario (
-                    $reg["usuario"],
-                    $reg["clave"],
-                    $reg["administrador"],
-                    $reg["activo"])
+                    $reg["USUARIO"],
+                    $reg["CLAVE"],
+                    $reg["ADMINISTRADOR"],
+                    $reg["ACTIVO"])
                 :NULL);
         } catch(\PDOException $e) {
             print "Error!: " . $e->getMessage();

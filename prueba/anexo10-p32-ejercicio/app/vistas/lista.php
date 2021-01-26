@@ -29,7 +29,8 @@ $().ready(function() {
     <tbody>
     <?php foreach ($users as $user) { ?>
         <tr>
-        <td><a href='<?= DOMAIN?>/controlusuarios/ver/<?=$user->nombre?>'><?=$user->nombre ?></a></td>
+          
+        <td><a href='http://localhost/prueba/anexo10-p32-ejercicio/public/controlusuarios/ver/<?=$user->nombre?>'><?=$user->nombre ?></a></td>
         <td><?= $user->clave ?></td>
         <td>
         <form action =  "<?=DOMAIN?>/controlusuarios/eliminar" method = "post">

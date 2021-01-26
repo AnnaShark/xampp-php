@@ -10,10 +10,10 @@ class Usuario {
     public $activo;
 
     public function __construct($nombre,$clave,$administrador, $activo){
-        $this->nombre = $_nombre;
-        $this->clave = $_clave;
-        $this->administrador = $_administrador; 
-        $this->activo = $_activo;
+        $this->nombre = $nombre;
+        $this->clave = $clave;
+        $this->administrador = $administrador; 
+        $this->activo = $activo;
     }
     
 }
