@@ -36,9 +36,6 @@ spl_autoload_register('autoload_classes');
 
 //creación del objeto enrutador y ejecución del controlador.
 $app = new \Core\App;
-//if (isset($_SESSION['usuario'])){
 $app->render();
-//}else{
-//header('Location: http://localhost/prueba/anexo-10-p32-ejercicio_upd/public/controlusuarios/login/');
-//die(header("Location: http://localhost/prueba/anexo-10-p32-ejercicio_upd/public/controlusuarios/login/"));
+
 
