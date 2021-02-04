@@ -40,7 +40,7 @@ set_exception_handler(function ($exception) use ($vista) {
 $peticion = explode('/', $_GET['PATH_INFO']); 
 $recurso = "Controladores\\".array_shift($peticion); 
 $metodo = strtolower($_SERVER['REQUEST_METHOD']);
-var_dump($recurso);
+
 // ENRUTADO: Comprobacioon: Existe el controlador? 
 if ( class_exists($recurso) == true ) {
 	$respuesta = call_user_func(array($recurso, $metodo), $peticion);
