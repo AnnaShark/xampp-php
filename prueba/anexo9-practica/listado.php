@@ -50,6 +50,7 @@ $titular_err = "";
              }    
                     
         }
+        
     
     } else{
             // Consulta
